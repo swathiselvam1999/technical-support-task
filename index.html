@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Boxes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="heading">
+            <h1>YAY! It’s BOGO</h1>
+        </div>
+
+        <!-- Box 1 -->
+        <div class="box" id="option1" onclick="toggleOption('option1')">
+            <div class=" box-info">
+                <div class="box-info-left">
+                    <input type="radio" name="unit" id="unit1" class="radio">
+                    <label for="unit1" class="unit-info">
+                        <span>1 Unit</span> <span class="discount">10% Off</span>
+                        <p>Standard Price</p>
+                    </label>
+                </div>
+                <div>
+                    <label for="unit-price">
+                        <p class="price">$10.00 USD </p>
+                        <p><span class="original-price">$24.00 USD</span></p>
+                    </label>
+                </div>
+            </div>
+            <div class="selection-details">
+                <div class="selectors">
+                    <div class="selector-item">
+                        <p>Size</p>
+                        <div class="label-select-pair">
+                            <label>#1</label>
+                            <select>
+                                <option>S</option>
+                                <option>M</option>
+                                <option>L</option>
+                            </select>
+                        </div>
+                        <div class="label-select-pair">
+                            <label>#2</label>
+                            <select>
+                                <option>S</option>
+                                <option>M</option>
+                                <option>L</option>
+                            </select>
+
+                        </div>
+                    </div>
+                    <div class="selector-item">
+                        <p>Colour</p>
+                        <div class="label-select-pair">
+                            <select>
+                                <option>Black</option>
+                                <option>Color</option>
+                            </select>
+                        </div>
+                        <div class="label-select-pair">
+                            <select>
+                                <option>Color</option>
+                                <option>Black</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Box 2 -->
+        <div class="box" id="option2" onclick="toggleOption('option2')">
+            <span class="top-right-label">Most Popular</span>
+            <div class=" box-info">
+                <div class="box-info-left">
+                    <input type="radio" name="unit" id="unit1" class="radio">
+                    <div class="unit-info">
+                        <span>2 Unit</span> <span class="discount">20% Off</span>
+                    </div>
+                </div>
+                <div>
+                    <label for="unit1">
+                        <p class="price">$18.00 USD </p>
+                        <p><span class="original-price">$24.00 USD</span></p>
+                    </label>
+                </div>
+            </div>
+            <div class="selection-details">
+                <div class="selectors">
+                    <div class="selector-item">
+                        <p>Size</p>
+                        <div class="label-select-pair">
+                            <label>#1</label>
+                            <select>
+                                <option>S</option>
+                                <option>M</option>
+                                <option>L</option>
+                            </select>
+                        </div>
+                        <div class="label-select-pair">
+                            <label>#2</label>
+                            <select>
+                                <option>S</option>
+                                <option>M</option>
+                                <option>L</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="selector-item">
+                        <p>Colour</p>
+                        <div class="label-select-pair">
+                            <select>
+                                <option>Black</option>
+                                <option>Color</option>
+                            </select>
+                        </div>
+                        <div class="label-select-pair">
+                            <select>
+                                <option>Color</option>
+                                <option>Black</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Box 3 -->
+        <div class="box" id="option3" onclick="toggleOption('option3')">
+            <div class=" box-info">
+                <div class="box-info-left">
+                    <input type="radio" name="unit" id="unit1" class="radio">
+                    <div class="unit-info">
+                        <span>3 Unit</span> <span class="discount">30% Off</span>
+                    </div>
+                </div>
+                <div>
+                    <label for="unit1">
+                        <p class="price">$24.00 USD </p>
+                        <p><span class="original-price">$24.00 USD</span></p>
+                    </label>
+                </div>
+            </div>
+            <div class="selection-details">
+                <div class="selectors">
+                    <div class="selector-item">
+                        <p>Size</p>
+                        <div class="label-select-pair">
+                            <label>#1</label>
+                            <select>
+                                <option>S</option>
+                                <option>M</option>
+                                <option>L</option>
+                            </select>
+                        </div>
+                        <div class="label-select-pair">
+                            <label>#2</label>
+                            <select>
+                                <option>S</option>
+                                <option>M</option>
+                                <option>L</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="selector-item">
+                        <p>Colour</p>
+                        <div class="label-select-pair">
+                            <select>
+                                <option>Black</option>
+                                <option>Color</option>
+                            </select>
+                        </div>
+                        <div class="label-select-pair">
+                            <select>
+                                <option>Color</option>
+                                <option>Black</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="footer">
+            <div class="footer-price">
+                <p>Free Delivery</p>
+                <p>Total: <span id="total">$0.00 USD</span></p>
+            </div>
+            <div>
+                <button class="add-to-cart">+ Add to Cart</button>
+            </div>
+        </div>
+        <div class="footer-info">
+            <p>@ Powered by Pumper</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
